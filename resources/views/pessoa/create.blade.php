@@ -2,9 +2,9 @@
 
 <form action="/pessoas" method="post">
     @csrf
-    <input type="text" placeholder="nome" name="nome">
-    <input type="text" placeholder="telefone" name="telefone">
-    <input type="text" placeholder="email" name="email">
+    <input type="text" placeholder="nome" name="nome" required>
+    <input type="text" placeholder="telefone" name="telefone" required>
+    <input type="text" placeholder="email" name="email" required>
     <button type="submit">Salvar</button>
 </form>
 
