@@ -38,6 +38,9 @@ class PessoaController extends Controller
         $pessoa->update($request->all());
         return redirect('/pessoas');
     }
-
+    public function destroy(Request $request, Pessoa $pessoa){
+        $pessoa->delete($request->all());
+        return redirect('/pessoas');
+    }
 }
 
